@@ -25,8 +25,8 @@ public class KeyBoard extends JFrame implements KeyListener
 		this.setLayout(new FlowLayout(FlowLayout.LEFT));
 		JLabel title1 = new JLabel("Type some text using your keyboard. The keys you press will be higlighted and the text will be display.");
 		JLabel title2 = new JLabel("Note:Clicking the buttons with your mouse will not perform any action.");
-		JLabel title3 = new JLabel("Please Typing 'The quick brown fox jumped over a lazy dog.'(without quotation marks).                                                       ");
-		textArea = new JTextArea(8,68);
+		JLabel title3 = new JLabel("Please Typing 'The quick brown fox jumped over a lazy dog.'(without quotation marks).                                                           ");
+		textArea = new JTextArea(8,70);
 		textArea.setEnabled(true);
 		textArea.setDisabledTextColor(Color.BLACK);
 		add(title1);
@@ -38,31 +38,31 @@ public class KeyBoard extends JFrame implements KeyListener
 		for(int i = 0; i < keys.length; i++)
 		{
 			JButton x = new JButton(keys[i]);
-			x.setPreferredSize(new Dimension(45,45));
-			if(keys[i] == "Backspace") x.setPreferredSize(new Dimension(100,43));
-			if(keys[i] == "Tab") x.setPreferredSize(new Dimension(80,43));
-			if(keys[i] == "Caps") x.setPreferredSize(new Dimension(80,43));
-			if(keys[i] == "Shift") x.setPreferredSize(new Dimension(100,43));
-			if(keys[i] == "Enter") x.setPreferredSize(new Dimension(80,43));
-			if(keys[i] == " ") x.setPreferredSize(new Dimension(80,43));
+			x.setPreferredSize(new Dimension(46,46));
+			if(keys[i] == "Backspace") x.setPreferredSize(new Dimension(100,46));
+			if(keys[i] == "Tab") x.setPreferredSize(new Dimension(80,46));
+			if(keys[i] == "Caps") x.setPreferredSize(new Dimension(80,46));
+			if(keys[i] == "Shift") x.setPreferredSize(new Dimension(100,46));
+			if(keys[i] == "Enter") x.setPreferredSize(new Dimension(80,46));
+			if(keys[i] == " ") x.setPreferredSize(new Dimension(80,46));
 			if(keys[i] == "^") 
 			{
 				JLabel k = new JLabel("");
-				k.setPreferredSize(new Dimension(20,43));
+				k.setPreferredSize(new Dimension(20,46));
 				add(k);
 			}
 			else if(keys[i] == " ")
 			{
 				x = new JButton(" ");
-				x.setPreferredSize(new Dimension(300,43));
+				x.setPreferredSize(new Dimension(300,46));
 				JLabel k = new JLabel(" ");
-				k.setPreferredSize(new Dimension(200,43));
+				k.setPreferredSize(new Dimension(200,46));
 				add(k);
 			}
 			else if(keys[i] == "<")
 			{
 				JLabel k = new JLabel(" ");
-				k.setPreferredSize(new Dimension(65,43));
+				k.setPreferredSize(new Dimension(74,46));
 				add(k);
 			}
 			x.setBackground(Color.WHITE);
